@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background: rgb(14, 23, 33);
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    position: relative;
+}
+main>h1{
+    color: white;
+    font-size: 3.5vw;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+#container{
+    background: lightblue;
+    width: w-fit;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#container h1{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+#btn{
+    display: flex;
+    gap: 20px;
+}
+#btn button{
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background: rgb(14, 23, 33);
+}
+#reset,
+#stop,
+#resume{
+    display: none;
+}
+#lapBox {
+    width: 50%;
+    padding-top: 40px;
+    color: #fff;
+    display: none;
+}
+#lapBox table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#lapBox th{
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+#lapBox td {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+#lapBox th {
+    border-bottom: 2px solid white;
+}
+#lapBox td {
+    border-bottom: 1px solid;
+}
+@media screen and (max-width: 730px) {
+    main>h1{
+        color: white;
+        font-size: 4vw;
+        left:50%;
+        top: 0%;
+        transform: translate(-50%, 0%);
+        margin-top: 20px;
+    }
+    #container{
+        margin-top: 20px;
+    }
+    #lapBox {
+        width: 60%;
+        padding-top: 40px;
+        color: #fff;
+    }
+    #lapBox table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    #lapBox th{
+        padding: 2vw;
+        text-align: center;
+        font-size: 3.1vw;
+    }
+    #lapBox td {
+        padding: 2vw;
+        text-align: center;
+        font-size: 2.8vw;
+    }
+}
+@media screen and (max-width: 420px) {
+    main>h1{
+        font-size: 7vw;
+
+    }
+    #container{
+        margin-top: 5vw;
+    }
+    #container{
+        background: lightblue;
+        width: 80%;
+        padding: 50px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #container h1{
+        font-size: 10vw;
+    }
+    #btn{
+        display: flex;
+        gap: 6vw;
+    }
+    #btn button{
+        padding: 3vw 4vw;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 3vw;
+        font-weight: 600;
+        color: white;
+        background: rgb(14, 23, 33);
+    }
+    #lapBox {
+        width: 80%;
+        padding-top: 40px;
+        color: #fff;
+    }
+    #lapBox table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    #lapBox th{
+        padding: 2vw;
+        text-align: center;
+        font-size: 4vw;
+    }
+    #lapBox td {
+        padding: 2vw;
+        text-align: center;
+        font-size: 3vw;
+    }
+}
